@@ -13,7 +13,18 @@ provider "aws" {
   region = "eu-central-1"
   default_tags {
     tags = {
-      Owner     = "lpawlik"
+      Owner     = "mwieczorek"
+      Workshops = "true"
+    }
+  }
+}
+
+provider "aws" {
+  alias  = "global"
+  region = "us-east-1"
+  default_tags {
+    tags = {
+      Owner     = "mwieczorek"
       Workshops = "true"
     }
   }
